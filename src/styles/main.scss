@@ -7,4 +7,64 @@
 @import "base/general";
 @import "../blocks/blocks";
 
+$light-color: #fff;
+$dark-color: #000;
+$bg-green-color: #00897b;
+$bg-light-color: #e4fdf9;
+$bg-blue-color: #3949ab;
 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, p  {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 30px;
+    letter-spacing: 2.2px;
+}
+
+.header {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 15px 133px 15px;
+
+    &>h3 {
+        font-size: 25px;
+    }
+
+    &-nav {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+
+        &__item {
+            margin-left: 22px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $dark-color;
+            font-weight: 600;
+        }
+    }
+
+    &__search {
+        border: none;
+        background-color: $light-color;
+        outline: none;
+        cursor: pointer;
+        &>img {
+            display: block;
+            width: 19px;
+        }
+    }
+}
