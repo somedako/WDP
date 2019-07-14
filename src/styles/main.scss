@@ -29,25 +29,54 @@ h3 {
     letter-spacing: 2.2px;
 }
 
+.page {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    &_picture {
+        margin: 0 auto;
+        max-width: 1170px;
+        background-image: url(../img/bg-wdp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 180px 108px 240px 108px;
+    }
+}
+
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 .header {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 33px 15px 133px 15px;
+    align-items: baseline;
+    padding: 33px 15px 50px 15px;
 
     &>h3 {
         font-size: 25px;
+        letter-spacing: .1px;
     }
 
     &-nav {
         list-style-type: none;
         display: flex;
-        justify-content: flex-end;
+        padding-left: 300px;
 
         &__item {
-            margin-left: 22px;
+            margin-left: 35px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: .3s;
+            &:hover {
+                border-bottom: 3px solid $dark-color;
+            }
         }
 
         &__link {
@@ -55,6 +84,7 @@ h3 {
             color: $dark-color;
             font-size: 20px;
             font-weight: 600;
+            letter-spacing: .9px;
         }
     }
 
@@ -63,9 +93,114 @@ h3 {
         background-color: $light-color;
         outline: none;
         cursor: pointer;
+        position: relative;
         &>img {
             display: block;
             width: 19px;
+            position: absolute;
+            bottom: -2px;
+            left: -5px;
         }
     }
 }
+
+
+.block-wdp {
+    text-align: center;
+    &__title {
+        &>h3 {
+            font-size: 60px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: $light-color;
+            padding-bottom: 23px;
+        }
+
+        &>span {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            color: $light-color;
+        }
+    }
+    &__btn {
+        margin-top: 130px;
+        &>button {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            color: $light-color;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 3px solid $light-color;
+            transition: .3s;
+            padding: 20px 30px;
+            &:last-child {
+                margin-left: 25px;
+            }
+            &:hover {
+                background-color: $bg-green-color;
+                border: 3px solid $bg-green-color;
+            }
+        }
+    }
+}
+
+.block-about {
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 175px;
+        h3 {
+            letter-spacing: 1.4px;
+            padding-bottom: 30px;
+        }
+
+        span {
+            display: block;
+            margin: 0 auto;
+            max-width: 650px;
+            letter-spacing: .7px;
+            line-height: 25px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        div {
+            text-align: center;
+            flex-basis: 31%;
+
+            .block-about-img {
+               margin: 0 auto;
+            }
+
+            .img-first {
+                background-image: url(../img/img-first.png);
+                background-repeat: no-repeat;
+                width: 62px;
+                height: 62px;
+            }
+
+            .img-second {
+                background-image: url(../img/img-second.png);
+                background-repeat: no-repeat;
+                width: 70px;
+                height: 60px;
+            }
+
+            .img-third {
+                background-image: url(../img/img-third.png);
+                background-repeat: no-repeat;
+                width: 57px;
+                height: 63px;
+            }
+        }
+    }
+
+}
+
+
+
