@@ -30,7 +30,7 @@ h3 {
 }
 
 .page {
-    padding-top: 160px;
+    padding-top: 112px;
     padding-bottom: 160px;
 
     &_picture {
@@ -39,9 +39,15 @@ h3 {
         background-image: url(../img/bg-wdp.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 180px 108px 240px 108px;
+        padding: 180px 108px 265px 108px;
+    }
+
+    &-grid {
+        background-color: $bg-light-color; 
     }
 }
+
+
 
 .wrap {
     max-width: 1170px;
@@ -49,6 +55,7 @@ h3 {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 
 
 .header {
@@ -150,7 +157,7 @@ h3 {
     &__title {
         margin: 0 auto;
         text-align: center;
-        padding-bottom: 175px;
+        padding-bottom: 92px;
         h3 {
             letter-spacing: 1.4px;
             padding-bottom: 30px;
@@ -175,6 +182,7 @@ h3 {
 
             .block-about-img {
                margin: 0 auto;
+               padding-bottom: 25px;
             }
 
             .img-first {
@@ -196,6 +204,19 @@ h3 {
                 background-repeat: no-repeat;
                 width: 57px;
                 height: 63px;
+            }
+
+            .block-about-title {
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-bottom: 19px;
+            }
+
+            .block-about-text {
+                max-width: 280px;
+                letter-spacing: 1px;
+                line-height: 21px;
+                margin: 0 auto;
             }
         }
     }
