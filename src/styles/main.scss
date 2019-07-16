@@ -44,6 +44,7 @@ h3 {
 
     &-grid {
         background-color: $bg-light-color; 
+        padding-bottom: 100px;
     }
 }
 
@@ -220,7 +221,184 @@ h3 {
             }
         }
     }
+}
 
+.grid {
+    display: grid;
+    grid-template-areas: "a a a" "b c d" "e f g";
+    max-width: 1080px;
+    margin: 0 auto;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &-title {
+        grid-area: a;
+        text-align: center;
+        padding: 0 180px 60px;
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 19px;
+        }
+
+        span {
+            max-width: 280px;
+            letter-spacing: 1px;
+            line-height: 21px;
+            margin: 0 auto;
+        }
+    }
+
+    &-item {
+        text-align: center;
+        padding: 50px 30px;
+        background-color: $light-color;
+        transition: .3s;
+
+        &:hover {
+            background-color: $bg-green-color;
+            color: $light-color;
+        }
+    
+
+        .grid-icon {
+            background-image: url(../img/grid-icon.png);
+            background-repeat: no-repeat;
+            width: 56px;
+            height: 62px;
+            margin: 0 auto 35px;
+            transition: .3s;
+            &:hover {
+                background-image: url(../img/grid-white.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+
+
+        .grid-btn {
+            background-color: transparent;
+            border: 3px solid $dark-color;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 14px 17px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: $light-color;
+                border: 3px solid $light-color;
+            }
+        }
+
+        &-1 {
+            grid-area: b;
+        }
+
+        &-2 {
+            grid-area: c;
+        }
+
+        &-3 {
+            grid-area: d;
+        }
+
+        &-4 {
+            grid-area: e;
+        }
+
+        &-5 {
+            grid-area: f;
+        }
+
+        &-6 {
+            grid-area: g;
+        }
+    }
+}
+
+.block-works {
+    &__title {
+        text-align: center;
+        margin-bottom: 85px;
+        h3 {
+            letter-spacing: 1.4px;
+            padding-bottom: 30px;
+        }
+
+        span {
+            display: block;
+            margin: 0 auto;
+            max-width: 650px;
+            letter-spacing: .7px;
+            line-height: 25px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 235px;
+
+        button {
+            background-color: $light-color;
+            border: 3px solid $bg-green-color;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 12px 30px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: $light-color;
+                border: 3px solid $bg-green-color;
+                background-color: $bg-green-color;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 1170px;
+        margin-top: 120px;
+        img {
+            padding: 0 17px 20px 0;
+        }
+
+        button {
+            display: block;
+            margin: 100px auto 20px;
+            background-color: $light-color;
+            border: 3px solid $bg-green-color;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 21px 63px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: $light-color;
+                border: 3px solid $bg-green-color;
+                background-color: $bg-green-color;
+            }
+        }
+    }
+
+    
 }
 
 
