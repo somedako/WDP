@@ -700,6 +700,23 @@ h3 {
             }
         }
     }
+    button {
+        display: block;
+        margin: 124px auto 40px;
+        background-color: $bg-gray-color;
+        border: 2px solid $dark-color;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 16px 30px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            color: $light-color;
+            border: 2px solid $bg-green-color;
+            background-color: $bg-green-color;
+        }
+    }
 }
 
 
