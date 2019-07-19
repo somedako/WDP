@@ -43,7 +43,7 @@ h3 {
         padding: 180px 108px 265px 108px;
     }
 
-    &-grid {
+    &-grid, &-green {
         background-color: $bg-light-color; 
     }
 
@@ -531,13 +531,174 @@ h3 {
             flex-basis: 31%;
         }
 
-        &-img {
-            width: 100%;
-            .team-img-1 {
-                background-image: url();
+        &__img {
+            width: 370px;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 12px;
+            img {
+                width: 370px;
+                height: 320px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
             }
         }
-        /*14*/
+
+        &__description {
+            margin-top: 35px;
+            text-align: center;
+
+           
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            p {
+                letter-spacing: 0.6px;
+            }
+        }
+
+         
+
+        &__social {
+            list-style-type: none;
+            text-align: center;
+            margin-top: 35px;
+            &>li {
+                display: inline-block;
+                font-size: 26px;
+                background-color: $bg-gray-color;
+                padding: 10px 15px;
+                border-radius: 12px;
+                margin-right: 10px;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $bg-blue-color;
+                }
+
+                &>a {
+                    color: $bg-green-color;
+                    &:hover {
+                        color: $light-color;
+                    }
+                }   
+            }
+
+            &>li:first-child {
+                padding:10px 20px;
+            }
+        }
+    }
+}
+
+.block-blog {
+
+    &-title {
+        text-align: center;
+        padding: 0 180px 60px;
+        margin-bottom: 120px;
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 19px;
+        }
+
+        span {
+            max-width: 280px;
+            letter-spacing: 1px;
+            line-height: 21px;
+            margin: 0 auto;
+        }
+    }
+
+    &-items {
+        &>div {
+            display: flex;
+            margin-bottom: 5px;    
+        } 
+        
+        &-img {
+            width: 571px;
+            height: 402px;
+            flex-basis: 50%;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 571px;
+                height: 402px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+            }
+        }
+
+        &-description {
+            flex-basis: 50%;
+            margin-left: 15px;
+            padding-top:  50px;
+
+            &.middle {
+                margin-left: 0;
+            }
+            a {
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                color: $bg-green-color;
+            }
+            &__subtitle {
+                display: flex;
+                margin-top: 24px;
+                font-size: 17px;
+                font-weight: 600;
+                letter-spacing: 1.1px;
+                position: relative;
+                &>p:first-child {
+                    padding-left: 30px;
+                    &::before {
+                        content: " ";
+                        display: block;
+                        background-image: url(../img/calendar.png);
+                        width: 17px;
+                        height: 18px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                &>p:last-child {
+                    padding-left: 70px;
+                    &::before {
+                        content: " ";
+                        display: block;
+                        background-image: url(../img/list.png);
+                        width: 15px;
+                        height: 18px;
+                        position: absolute;
+                        top: 0;
+                        left: 170px;
+                    }
+                }
+            }
+
+            &__text {
+                max-width: 480px;
+                line-height: 24px;
+                letter-spacing: 0.7px;
+                margin-top: 18px;
+            }
+        }
     }
 }
 
