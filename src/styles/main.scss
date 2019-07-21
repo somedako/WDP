@@ -50,6 +50,13 @@ h3 {
     &-gray {
         background-color: $bg-gray-color;
     }
+
+    &-contacts {
+        margin: 0 auto;
+        background-image: url(../img/bg-contacts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -718,6 +725,114 @@ h3 {
         }
     }
 }
+
+.block-contacts {
+    padding: 0 50px; 
+    &-title {
+        text-align: center;
+        padding: 0 180px 60px;
+        margin-bottom: 120px;
+        color: $light-color;
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 19px;
+        }
+
+        span {
+            max-width: 280px;
+            letter-spacing: 1px;
+            line-height: 21px;
+            margin: 0 auto;
+        }
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 102px;
+        &>div {
+            flex-basis: 31%;
+        }
+        &__img {
+            text-align: center;
+            margin-bottom: 33px;
+        }
+
+        &__link {
+            text-align: center;
+            margin-bottom: 5px;
+            a {
+                text-decoration: none;
+                color: $light-color;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 0.6px;
+            }
+        }
+    } 
+    .contact-form {
+        position: relative;
+        &>div {
+            display: flex;
+            justify-content: center;
+        }
+        &-item {
+            flex-basis: 48%;
+            margin-bottom: 30px;
+            &:first-child {
+                margin-right: 25px;
+            }
+            input {
+                width: 100%;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 30px 0 30px 10px;
+                border: none;
+                border-radius: 12px;
+                outline: none;
+            }
+            &-text {
+                padding-left: 8px;
+                input {
+                    padding: 30px 0 200px 10px;
+                }
+            }  
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 385px;
+            background-color: $light-color;
+            border: none;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 24px 84px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: $light-color;
+                background-color: $bg-green-color;
+            }
+        }
+    } 
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &-content {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+    }
+}
+
+
 
 
 
