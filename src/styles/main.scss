@@ -28,6 +28,9 @@ h1, h2, h3, h4, p  {
 h3 {
     font-size: 30px;
     letter-spacing: 2.2px;
+    @media(max-width: 650px) {
+        font-size: 18px;
+    }
 }
 
 .page {
@@ -41,6 +44,9 @@ h3 {
         background-repeat: no-repeat;
         background-size: cover;
         padding: 180px 108px 265px 108px;
+        @media(max-width: 850px) {
+           padding: 140px 60px 165px 60px
+        }
     }
 
     &-grid, &-green {
@@ -77,17 +83,16 @@ h3 {
     justify-content: space-between;
     align-items: baseline;
     padding: 33px 15px 50px 15px;
-    @media(max-width: 920px) {
-        padding-bottom: 100px;
+
+    @media(max-width: 750px) {
+        padding-left:  0;
     }
 
 
     &>h3 {
         font-size: 25px;
         letter-spacing: .1px;
-        @media(max-width: 920px) {
-            font-size: 20px;
-        }
+
         @media(max-width: 850px) {
             display: none;
         }
@@ -108,6 +113,9 @@ h3 {
             padding-bottom: 5px;
             border-bottom: 3px solid transparent;
             transition: .3s;
+            @media(max-width: 750px) {
+                margin-left:  15px;
+            }
             &:hover {
                 border-bottom: 3px solid $dark-color;
             }
@@ -119,6 +127,9 @@ h3 {
             font-size: 20px;
             font-weight: 600;
             letter-spacing: .9px;
+            @media(max-width: 750px) {
+                font-size: 15px;
+            }
         }
     }
 
@@ -128,10 +139,7 @@ h3 {
         outline: none;
         cursor: pointer;
         position: relative;
-        @media(max-width: 920px) {
-           flex-direction: row;
-        }
-        
+       
 
         &>img {
             display: block;
@@ -140,9 +148,9 @@ h3 {
             bottom: -2px;
             left: -5px;
             @media(max-width: 1200px) {
-                left: -10px;   
+                display: block;
+                margin-left: 10px;  
             }
-
         }
     }
 }
@@ -157,6 +165,9 @@ h3 {
             letter-spacing: 3px;
             color: $light-color;
             padding-bottom: 23px;
+            @media(max-width: 850px) {
+                font-size: 40px;
+            }
         }
 
         &>span {
@@ -164,10 +175,14 @@ h3 {
             font-weight: 600;
             letter-spacing: -0.2px;
             color: $light-color;
+            @media(max-width: 850px) {
+                font-size: 15px;
+            }
         }
     }
     &__btn {
         margin-top: 130px;
+       
         &>button {
             font-size: 20px;
             font-weight: 600;
@@ -178,6 +193,12 @@ h3 {
             border: 3px solid $light-color;
             transition: .3s;
             padding: 20px 30px;
+            @media(max-width: 850px) {
+                font-size: 15px;
+                padding: 10px 20px;
+            }
+
+
             &:last-child {
                 margin-left: 25px;
             }
@@ -197,6 +218,7 @@ h3 {
         h3 {
             letter-spacing: 1.4px;
             padding-bottom: 30px;
+            
         }
 
         span {
@@ -212,9 +234,15 @@ h3 {
     &-items {
         display: flex;
         justify-content: space-between;
+        @media(max-width: 650px) {
+            flex-direction: column;
+        }
         div {
             text-align: center;
             flex-basis: 31%;
+            @media(max-width: 650px) {
+                margin-bottom: 10px;
+            }
 
             .block-about-img {
                margin: 0 auto;
@@ -267,11 +295,19 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 15px;
     padding-right: 15px;
+    @media(max-width: 780px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a a" "b c" "d e" "f g";
+        margin-bottom: 80px;
+    }
 
     &-title {
         grid-area: a;
         text-align: center;
         padding: 0 180px 60px;
+        @media(max-width: 780px) {
+            padding:0 100px 0;
+        }
         h3 {
             font-size: 28px;
             font-weight: 700;
@@ -386,11 +422,11 @@ h3 {
     }
 
     &__btn {
-        display: flex;
-        justify-content: space-around;
-        padding: 0 235px;
+        text-align: center;
 
         button {
+            margin-right: 10px;
+            align-items: center;
             background-color: $light-color;
             border: 3px solid $bg-green-color;
             font-size: 20px;
@@ -399,6 +435,11 @@ h3 {
             padding: 12px 30px;
             cursor: pointer;
             transition: .3s;
+            @media(max-width: 1220px) {
+                font-size: 16px;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+             }
             &:hover {
                 color: $light-color;
                 border: 3px solid $bg-green-color;
@@ -413,6 +454,11 @@ h3 {
         img {
             height: 370px;
             padding: 0 17px 20px 0;
+            @media(max-width: 1220px) {
+                width: 33%;
+                padding: 0;
+            }
+ 
         }
 
         button {
