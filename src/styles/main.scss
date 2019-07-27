@@ -234,6 +234,16 @@ h3 {
             }
         }
     }
+    &>#next {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 100px 10px 0 24px;
+        &:active {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .block-about {
@@ -1066,6 +1076,8 @@ h3 {
         }  
     }
 }
+
+
 
 
 

@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -48,6 +49,8 @@
                     <button>Our services</button>
                     <button>Hire is now</button>
                 </div>
+
+                <button id="next"><img src="../img/next.png" alt=""></button>
             </div>
         </div>
     </div>
@@ -225,7 +228,7 @@
                     <h3>Our Team Member</h3>
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore el dolore magna aliqua. Ut enim ad minim veniam.</span>
                 </div>
-                <div class="block-team-items">
+                <div class="block-team-items block-slider">
                     <div>
                         <div class="block-team-items__img"><img src="../img/team-1.png" alt=""></div>
                         <div class="block-team-items__description">
@@ -268,7 +271,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="block-team-carousel"></div>
             </div>
         </div>
     </div>
@@ -367,6 +369,16 @@
             <p>All right reserved &copy; 2017</p>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/77ee17047a.js"></script>    
+    <script src="https://kit.fontawesome.com/77ee17047a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#next").click(function(){
+                $(".block-wdp__title").toggle();
+                $(".block-wdp__btn").toggle(); 
+            });
+        });
+    </script>    
 </body>
 </html>
