@@ -111,6 +111,11 @@ h3 {
         @media(max-width: 850px) {
             display: none;
         }
+
+        @media(max-width: 650px) {
+            display: block;
+            margin-left: 15px;
+        }
     }
 
     &-nav {
@@ -120,10 +125,11 @@ h3 {
 
         @media(max-width: 1200px) {
             padding-left: 0;
+            flex-wrap: wrap;
         }
 
-        @media(max-width: 500px) {
-            flex-wrap: wrap;
+        @media(max-width: 650px) {
+            display: none;
         }
         
 
@@ -1145,6 +1151,30 @@ h3 {
     border-radius: 10px;
   
 
+    .modal-nav {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            margin-left: 15px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: .3s;
+            &:hover {
+                border-bottom: 3px solid $dark-color;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $dark-color;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: .9px;
+            margin-left: 20px;
+        }
+    }
     .btn-close {
         border: none;
         background-color: transparent;
